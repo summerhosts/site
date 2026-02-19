@@ -6,8 +6,6 @@ tags:
   - Premium offers
 ---
 
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-
 This host was going to be sold to as.valex and cooldragon12346 but ether scammed them (he basically left with the money), atleast thats what they say (ether says that they tried to take control over xeh in a hostile way). So XEH was split into 2 servers: one where the 2 "new owners" have admin and another that has been deleted where ether was the admin. [Here's an in-depth article about the scam](https://blog.torrentsmp.com/2025/02/09/XEH_Scam/)
 
 <Tabs>
