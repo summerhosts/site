@@ -84,9 +84,9 @@ Heres a screenshot of the dates (provided by cooldragon12346 in the news channel
   * [Discord](https://discord.gg/sJGYQAmytU)
 ## Events
 ### Purchase
-**<DateDisplay timestamp="1740275063520" />**
+**<DateDisplay timestamp="1740275063520" />**  
 [Ciph](../people/Ciph.md) announced that he bought the discord sever from [cooldragon12346](../people/Landon%20West.md) and is planning to actually open a host. Thanks to his visionary powers, he also sees a bright future for the host.
 
 ### Rebrand
-**<DateDisplay timestamp="1740331302229" />**
+**<DateDisplay timestamp="1740331302229" />**  
 The host was rebranded to [Nexio Cloud](./nexiocloud.md). It was also announced that it was going to be released very soon. Events and more info will be in the new [Nexio Cloud page](./nexiocloud.md)
