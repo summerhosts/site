@@ -44,7 +44,7 @@ Axis AI: offers an AI response and API for a certain amount of currency
 **<DateDisplay timestamp="1737350813690" />**  
 Message sent by A$H (ashrarity)  
 
-`#` 1,000 MEMBERS ![1328418497100779592](../../../assets/custom_emojis/xeh.sh/xeh_big.webp)
+`#` 1,000 MEMBERS ![1328418497100779592](../public/custom_emojis/xeh.sh/xeh_big.webp)
 > We are beyond excited to share that we've officially hit __**1,000 members**__ in our Discord server! 🎉
 > In just __one week__, our hosting service has seen incredible __growth,__ and it's all thanks to **YOU** — our amazing community! 🔥
 > This *milestone* is a testament to the hard work and dedication of our users, and we’re incredibly grateful for each and every one of you who has joined us on this journey. 
@@ -52,12 +52,12 @@ Message sent by A$H (ashrarity)
 > 
 > Thank you for being a part of this exciting ride! The best is yet to come! 👀
 
-`#` NEW NODE ![1322992750098124905](../../../assets/custom_emojis/xeh.sh/strike.webp)
+`#` NEW NODE ![1322992750098124905](../public/custom_emojis/xeh.sh/strike.webp)
 > We’re excited to announce that our **SG-SGP-2 Node** is now live! 🚀
 > This new node comes with __**2x the RAM**__ compared to our previous one, offering even more power and performance for your hosting needs. 
 > Best of all, it’s **open to everyone** 
 > 
-> We’re __always working __to *improve your experience,* and this upgrade is just one step in that direction. ![1328418497100779592](../../../assets/custom_emojis/xeh.sh/xeh_big.webp)
+> We’re __always working __to *improve your experience,* and this upgrade is just one step in that direction. ![1328418497100779592](../public/custom_emojis/xeh.sh/xeh_big.webp)
 > Enjoy the __enhanced performance, and thank you for being a part of our community! __❤️
 > 
 > @everyone
