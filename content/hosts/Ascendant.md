@@ -9,6 +9,8 @@ tags:
 
 ## Info
 * [Discord](https://discord.gg/vQMct6RTaE)
+* [Website](https://ascendant.sh)
+* [GitHub](https://github.com/ascensant-sh)
 
 ## History
 ### Pun
