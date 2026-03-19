@@ -9,8 +9,8 @@ description: History of SRYDEN.
 * [Old Website 1](https://sryden.cloud)
 * [Old Website 2](https://sryden.co.uk)
 * [Website archives](https://web.archive.org/web/*/sryden.com)
-* [pages.dev site](https://sryden.pages.dev)
-* [vercel site](https://sryden.vercel.app)
+* [pages.dev](https://sryden.pages.dev)
+* [vercel.app](https://sryden.vercel.app)
 * Has YouTube channels
   * [@SRYDEN](https://www.youtube.com/@SRYDEN)
   * [@sryden.official](https://youtube.com/@sryden.offical)
@@ -18,12 +18,16 @@ description: History of SRYDEN.
   * [@sryden](https://npmjs.com/~sryden)
 * Trustpilot
   * [sryden.com](https://trustpilot.com/review/sryden.com)
+* Has GitHub accounts
+  * [sryden](https://github.com/sryden)
+  * [sryden-organization](https://github.com/sryden-organization)
 * Owned [Halex](../hosts/halex.md)
 * Owned [gridway](https://gridway.io/)
+* Owned Verse
 * Owned Fractal
 * Owned PlutoNodes
 * Owned PolarisNode
-* Made [Heliactyl](../software/heliactyl.md)
+* Made [Heliactyl](../software/heliactyl.md), [Skyport](../software/skyport.md), [Radar](../software/radar.md)
 * Hidden videos
   * [The Best FREE 24/7 Minecraft Server Hosting in 2024 - Halex.gg](https://www.youtube.com/watch?v=Pyir_RsiaFw)
  
