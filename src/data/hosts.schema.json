@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Hosts",
+  "type": "array",
+  "items": {
+    "oneOf": [
+      {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "info": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "value"
+              ]
+            }
+          }
+        },
+        "required": [
+          "name",
+          "slug",
+          "info"
+        ]
+      },
+      {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "hosts": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "slug": {
+                  "type": "string"
+                },
+                "info": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "link": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "value"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "name",
+          "slug",
+          "hosts"
+        ]
+      }
+    ]
+  }
+}

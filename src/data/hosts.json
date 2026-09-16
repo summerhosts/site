@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ascendant",
+    "slug": "ascendant",
+    "info": {
+      "Discord": {
+        "value": "https://discord.gg/vQMct6RTaE",
+        "link": true
+      },
+      "Website": {
+        "value": "https://ascendant.sh/",
+        "link": true
+      },
+      "GitHub": {
+        "value": "https://github.com/ascendant-sh",
+        "l  ink": true
+      }
+    }
+  }
+]

@@ -1,9 +1,0 @@
-summary {
-  cursor: pointer;
-  user-select: none;
-  border-radius: 1em;
-}
-
-.prev-next {
-  display: none !important;
-}

@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import hosts from "../../data/hosts.json";
+---
+
+<BaseLayout title="Hosts list | Summerhosts">
+  <div class="hosts-container">
+    {
+      hosts.map((h) => (
+        <a class="host outline" href={`/hosts/${h.slug}`}>
+          <h1>{h.name}</h1>
+        </a>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .hosts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 1em;
+  }
+
+  .host {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    align-items: center;
+
+    max-width: 20em;
+    margin: 0;
+  }
+
+  .host:hover {
+    background-color: var(--tertiary-color);
+  }
+</style>

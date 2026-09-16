@@ -1,0 +1,46 @@
+---
+
+---
+
+<nav class="outline">
+  <a href="/" class="text-logo"><h1>Summerhosts</h1></a><a href="/hosts"
+    >Hosts</a
+  >
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    margin: 2em;
+    gap: 1em;
+    align-items: center;
+
+    border-radius: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0.5em;
+
+    border-radius: 20px;
+    outline-style: solid;
+    outline-color: transparent;
+
+    transition: outline-color 200ms;
+
+    box-sizing: content-box;
+  }
+
+  a:hover {
+    outline-color: var(--tertiary-color);
+  }
+
+  .text-logo h1 {
+    margin: 0.3em;
+  }
+
+  .text-logo:hover {
+    outline-color: transparent !important;
+  }
+</style>

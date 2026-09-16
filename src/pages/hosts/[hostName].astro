@@ -1,0 +1,43 @@
+---
+import hosts from "../../data/hosts.json";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  return hosts.map((h) => ({
+    params: {
+      hostName: h.slug,
+    },
+    props: h,
+  }));
+}
+
+interface Props {
+  name: string;
+  info: { [key: string]: { value: string; link?: boolean } };
+  banner?: string;
+}
+
+const { name, info, banner } = Astro.props;
+---
+
+<BaseLayout title={`${name} | Summerhosts`}>
+  {banner ? <img src={banner} /> : <h1>{name}</h1>}
+  <h2>Info</h2>
+  <ul>
+    {
+      Object.entries(info).map(([infoName, value]) =>
+        value.link ? (
+          <li>
+            <a target="_blank" href={value.value}>
+              {infoName}
+            </a>
+          </li>
+        ) : (
+          <li>
+            {infoName}: {value.value}
+          </li>
+        ),
+      )
+    }
+  </ul>
+</BaseLayout>

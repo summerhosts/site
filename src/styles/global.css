@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #abd2fa;
+  --secondary-color: #7692ff;
+  --tertiary-color: #1b2cc1;
+  --background-color: #091540;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+.outline {
+  outline-style: solid;
+  outline-color: var(--tertiary-color);
+  border-radius: 20px;
+}
