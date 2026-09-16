@@ -11,7 +11,7 @@ tags:
 
 - [Discord](https://discord.gg/vQMct6RTaE)
 - [Website](https://ascendant.sh)
-- [GitHub](https://github.com/ascensant-sh)
+- [GitHub](https://github.com/ascendant-sh)
 
 ## History
 
