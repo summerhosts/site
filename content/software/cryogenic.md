@@ -1,6 +1,6 @@
 ---
 title: Cryogenic
-description: "The replacement for Pterodactyl wings, previously known as Krypton"
+description: "The replacement for Pterodactyl wings, previously known as Krypton, written in rust"
 ---
 
 ![img](https://summerhosts.github.io/media/cryogenic/15.png)
