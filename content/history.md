@@ -11,6 +11,7 @@ Some of the text in these graphs is a link
 :::
 
 ## Hosts
+
 ```mermaid
 flowchart TD;
   CRIT[criticnode.com];
@@ -72,7 +73,7 @@ flowchart TD;
 
   N["nexiocloud"];
   click N href "/hosts/nexiocloud";
-  
+
   NO[northvm];
   click NO href "/hosts/northvm.net";
 
@@ -93,7 +94,7 @@ flowchart TD;
 
   ALT7["Altare 7 (altr.cc)"];
   click ALT7 href "/hosts/altare/7";
-  
+
   ALT8["Altare 8 (altr.cc)"];
   click ALT8 href "/hosts/altare/8";
 
@@ -102,10 +103,12 @@ flowchart TD;
 
   ALT10["Altare 10 (altare.sh)"];
   click ALT10 href "/hosts/altare/10";
-  
+
   ALT11["Altare 11 (altare.gg)"];
 
   ALT12["Altare 12 (altare.gg)"];
+
+  ALT13["Altare 13 (not released)"];
 
   NA1["NA1 (na1.host)"]
   click NA1 href "/hosts/na1.host";
@@ -177,6 +180,7 @@ flowchart TD;
   AZT -->|Rebranded| SYN;
   ALT10 --> ALT11;
   ALT11 --> ALT12;
+  ALT12 --> ALT13;
   SYN --> SYNO;
 
   NE --> D;
@@ -184,8 +188,11 @@ flowchart TD;
 ```
 
 ## Legal entities
+
 ### History
+
 This is based on what Ether says but the only actual legal entity is probably [ZTL](https://www.ztl.sh/)
+
 ```mermaid
 timeline
   2025 : Mantle Industries LLC : Metropolis : Altare Inc. : Foundry : Ascendant AI
