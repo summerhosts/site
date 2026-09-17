@@ -1,7 +1,40 @@
 [
   {
+    "name": "Altare",
+    "slug": "altare",
+    "hosts": [
+      {
+        "name": "1",
+        "slug": "1",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Website": {
+            "value": "https://altare.pro/",
+            "link": true
+          },
+          "Website (archive)": {
+            "value": "https://web.archive.org/web/20250328211221/https://altare.pro/app",
+            "link": true
+          },
+          "Dashboard": {
+            "value": "https://altare.pro/app/dashboard",
+            "link": true
+          },
+          "Dashboard (archive)": {
+            "value": "https://web.archive.org/web/20250312161828/https://altare.pro/app/auth",
+            "link": true
+          }
+        }
+      }
+    ]
+  },
+  {
     "name": "Ascendant",
     "slug": "ascendant",
+    "bannerUrl": "https://summerhosts.github.io/media/ascendant/banner.webp",
     "info": {
       "Discord": {
         "value": "https://discord.gg/vQMct6RTaE",
@@ -13,7 +46,7 @@
       },
       "GitHub": {
         "value": "https://github.com/ascendant-sh",
-        "l  ink": true
+        "link": true
       }
     }
   }

@@ -10,6 +10,9 @@
           "name": {
             "type": "string"
           },
+          "bannerUrl": {
+            "type": "string"
+          },
           "slug": {
             "type": "string"
           },
