@@ -6,7 +6,13 @@ import HostCard from "../../components/HostCard.astro";
 
 <BaseLayout title="Hosts list | Summerhosts">
   <div class="hosts-container">
-    {hosts.map((h) => <HostCard host={h} />)}
+    {
+      hosts.map((h) => {
+        if (h.hosts)
+          return h.hosts.map((ch) => <HostCard parent={h} host={ch} />);
+        else return <HostCard host={h} />;
+      })
+    }
   </div>
 </BaseLayout>
 

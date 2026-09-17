@@ -59,13 +59,38 @@
                 "slug": {
                   "type": "string"
                 },
+                "bannerUrl": {
+                  "type": "string"
+                },
                 "info": {
                   "type": "object",
                   "additionalProperties": {
                     "type": "object",
                     "properties": {
                       "value": {
-                        "type": "string"
+                        "oneOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "value": {
+                                  "type": "string"
+                                },
+                                "name": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "name",
+                                "value"
+                              ]
+                            }
+                          }
+                        ]
                       },
                       "link": {
                         "type": "boolean"

@@ -1,0 +1,83 @@
+---
+import hosts from "../../data/hosts.json";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export function getStaticPaths() {
+  const paths = [];
+
+  for (const host of hosts) {
+    if (host.hosts) {
+      host.hosts.forEach((h) =>
+        paths.push({
+          params: { hostName: `${host.slug}/${h.slug}` },
+          props: { host: h, parent: host },
+        }),
+      );
+    } else paths.push({ params: { hostName: host.slug }, props: { host } });
+  }
+  console.log(paths);
+  return paths;
+}
+
+interface Host {
+  name: string;
+  info: { [key: string]: { value: string; link?: boolean } };
+  banner?: string;
+}
+
+interface Parent {
+  name: string;
+  slug: string;
+  hosts: Host[];
+}
+
+interface Props {
+  host: Host;
+  parent?: Parent;
+}
+
+const { host, parent } = Astro.props;
+const { name, info, banner } = host;
+
+const fullName = parent ? [parent.name, host.name].join(" ") : host.name;
+---
+
+<BaseLayout title={`${fullName} | Summerhosts`}>
+  {banner ? <img src={banner} /> : <h1>{fullName}</h1>}
+  <h2>Info</h2>
+  <ul>
+    {
+      Object.entries(info).map(([infoName, value]) => {
+        if (Array.isArray(value.value)) {
+          return (
+            <li>
+              {infoName} [
+              {value.value.map((v, i) => (
+                <>
+                  {i > 0 && ", "}
+                  <a href={v.value}>{v.name}</a>
+                </>
+              ))}
+              ]
+            </li>
+          );
+        } else {
+          if (value.link) {
+            return (
+              <li>
+                <a target="_blank" href={value.value}>
+                  {infoName}
+                </a>
+              </li>
+            );
+          } else
+            return (
+              <li>
+                {infoName}: {value.value}
+              </li>
+            );
+        }
+      })
+    }
+  </ul>
+</BaseLayout>

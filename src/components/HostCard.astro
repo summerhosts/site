@@ -1,10 +1,17 @@
 ---
-const { host } = Astro.props;
+const { host, parent } = Astro.props;
 ---
 
-<a class="host outline" href={`/hosts/${host.slug}`}>
-  {host.bannerUrl && <img src={host.bannerUrl} />}
-  <h1>{host.name}</h1>
+<a
+  class="host outline"
+  href={`/hosts/${parent && `${parent.slug}/`}${host.slug}`}
+>
+  {
+    host.bannerUrl && (
+      <img src={host.bannerUrl ? host.bannerUrl : parent.bannerUrl} />
+    )
+  }
+  <h1>{parent && `${parent.name} `}{host.name}</h1>
 </a>
 
 <style>

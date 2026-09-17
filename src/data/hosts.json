@@ -12,19 +12,191 @@
             "link": true
           },
           "Website": {
-            "value": "https://altare.pro/",
-            "link": true
-          },
-          "Website (archive)": {
-            "value": "https://web.archive.org/web/20250328211221/https://altare.pro/app",
+            "value": [
+              {
+                "value": "https://altare.pro/",
+                "name": "original"
+              },
+              {
+                "value": "https://web.archive.org/web/20250328211221/https://altare.pro/app",
+                "name": "archive"
+              }
+            ],
             "link": true
           },
           "Dashboard": {
-            "value": "https://altare.pro/app/dashboard",
+            "value": [
+              {
+                "value": "https://altare.pro/app/dashboard",
+                "name": "original"
+              },
+              {
+                "value": "https://web.archive.org/web/20250312161828/https://altare.pro/app/auth",
+                "name": "archive"
+              }
+            ],
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "2",
+        "slug": "2",
+        "bannerUrl": "https://summerhosts.github.io/media/altare/2/branding.png",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
             "link": true
           },
-          "Dashboard (archive)": {
-            "value": "https://web.archive.org/web/20250312161828/https://altare.pro/app/auth",
+          "Website": {
+            "value": [
+              {
+                "value": "https://altare.pro/",
+                "name": "original"
+              },
+              {
+                "value": "https://web.archive.org/web/20250328211221/https://altare.pro/app",
+                "name": "archive"
+              }
+            ],
+            "link": true
+          },
+          "Dashboard": {
+            "value": [
+              {
+                "value": "https://altare.pro/app/dashboard",
+                "name": "original"
+              },
+              {
+                "value": "https://web.archive.org/web/20250312161828/https://altare.pro/app/auth",
+                "name": "archive"
+              }
+            ],
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "3",
+        "slug": "3",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Dashboard staging": {
+            "value": "https://staging.altare.cv/",
+            "link": true
+          },
+          "Dashboard": {
+            "value": "https://console.altare.cv/",
+            "link": true
+          },
+          "Pterodactyl panel": {
+            "value": "https://panel.altare.cv/",
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "6",
+        "slug": "6",
+        "bannerUrl": "https://summerhosts.github.io/media/altare/6/6.png",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Dashboard": {
+            "value": "https://console.altr.cc/",
+            "link": true
+          },
+          "Pterodactyl panel": {
+            "value": "https://panel.altr.cc/",
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "7",
+        "slug": "7",
+        "bannerUrl": "https://summerhosts.github.io/media/altare/7/7.png",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Dashboard": {
+            "value": "https://console.altr.cc/",
+            "link": true
+          },
+          "Pterodactyl panel": {
+            "value": "https://panel.altr.cc/",
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "8",
+        "slug": "8",
+        "bannerUrl": "https://summerhosts.github.io/media/altare/8/8.png",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Dashboard": {
+            "value": [
+              {
+                "value": "https://archive.is/diH6M",
+                "name": "archived"
+              },
+              {
+                "value": "https://console.altr.cc/",
+                "name": "original"
+              }
+            ],
+            "link": true
+          },
+          "Pterodactyl panel": {
+            "value": [
+              {
+                "value": "https://archive.is/BLoEF",
+                "name": "archived"
+              },
+              {
+                "value": "https://panel.altr.cc/",
+                "name": "original"
+              }
+            ],
+            "link": true
+          }
+        }
+      },
+      {
+        "name": "10",
+        "slug": "10",
+        "bannerUrl": "https://summerhosts.github.io/media/altare/10/10.webp",
+        "info": {
+          "Discord": {
+            "value": "https://discord.gg/bMSKVN63w5",
+            "link": true
+          },
+          "Website": {
+            "value": [
+              {
+                "value": "https://archive.is/ppfqx",
+                "name": "archived"
+              },
+              {
+                "value": "https://archive.is/ppfqx",
+                "name": "archived"
+              },
+              {
+                "value": "https://altare.sh/",
+                "name": "original"
+              }
+            ],
             "link": true
           }
         }
