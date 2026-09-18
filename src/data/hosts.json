@@ -189,10 +189,6 @@
                 "name": "archived"
               },
               {
-                "value": "https://archive.is/ppfqx",
-                "name": "archived"
-              },
-              {
                 "value": "https://altare.sh/",
                 "name": "original"
               }
@@ -219,6 +215,17 @@
       "GitHub": {
         "value": "https://github.com/ascendant-sh",
         "link": true
+      }
+    },
+    "events": {
+      "1764709340484": {
+        "title": "Pun",
+        "value": "Anthropic acquired Bun so we are launching https://github.com/ascendant-sh/pun",
+        "author": {
+          "id": "287810414094450699",
+          "username": "ethzr",
+          "displayName": "ethzr"
+        }
       }
     }
   }

@@ -1,6 +1,9 @@
 ---
-import hosts from "../../data/hosts.json";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Events from "../../components/host/Events.astro";
+import Info from "../../components/host/Info.astro";
+import type { Host, Parent } from "../../types/hosts";
+import hosts from "../../data/hosts.json";
 
 export function getStaticPaths() {
   const paths = [];
@@ -15,20 +18,8 @@ export function getStaticPaths() {
       );
     } else paths.push({ params: { hostName: host.slug }, props: { host } });
   }
-  console.log(paths);
+
   return paths;
-}
-
-interface Host {
-  name: string;
-  info: { [key: string]: { value: string; link?: boolean } };
-  banner?: string;
-}
-
-interface Parent {
-  name: string;
-  slug: string;
-  hosts: Host[];
 }
 
 interface Props {
@@ -37,47 +28,34 @@ interface Props {
 }
 
 const { host, parent } = Astro.props;
-const { name, info, banner } = host;
+const { name, info, bannerUrl } = host;
 
-const fullName = parent ? [parent.name, host.name].join(" ") : host.name;
+const fullName = parent ? [parent.name, name].join(" ") : host.name;
 ---
 
 <BaseLayout title={`${fullName} | Summerhosts`}>
-  {banner ? <img src={banner} /> : <h1>{fullName}</h1>}
-  <h2>Info</h2>
-  <ul>
-    {
-      Object.entries(info).map(([infoName, value]) => {
-        if (Array.isArray(value.value)) {
-          return (
-            <li>
-              {infoName} [
-              {value.value.map((v, i) => (
-                <>
-                  {i > 0 && ", "}
-                  <a href={v.value}>{v.name}</a>
-                </>
-              ))}
-              ]
-            </li>
-          );
-        } else {
-          if (value.link) {
-            return (
-              <li>
-                <a target="_blank" href={value.value}>
-                  {infoName}
-                </a>
-              </li>
-            );
-          } else
-            return (
-              <li>
-                {infoName}: {value.value}
-              </li>
-            );
-        }
-      })
-    }
-  </ul>
+  {
+    bannerUrl ? (
+      <div class="banner-container">
+        <img class="banner" src={bannerUrl} />
+      </div>
+    ) : (
+      <h1>{fullName}</h1>
+    )
+  }
+  <Info info={info} />
+  {host.events && <Events events={host.events} />}
 </BaseLayout>
+
+<style>
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner {
+    max-height: 40vh;
+    max-width: 50vw;
+  }
+</style>

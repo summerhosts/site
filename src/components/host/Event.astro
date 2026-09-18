@@ -1,0 +1,19 @@
+---
+import type { Event } from "../../types/events";
+import DateTime from "../DateTime.astro";
+import Author from "../event/Author.astro";
+
+interface Props {
+  event: Event;
+  timestamp: string;
+}
+
+const { event, timestamp } = Astro.props;
+---
+
+{event.title && <h3>{event.title}</h3>}
+<DateTime timestamp={timestamp} />
+<p>
+  {event.author && <Author author={event.author} />}<br />
+  {event.author ? <div class="quote">{event.value}</div> : event.value}
+</p>

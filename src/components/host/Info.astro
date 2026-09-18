@@ -1,0 +1,46 @@
+---
+import type { HostInfo } from "../../types/hosts";
+
+interface Props {
+  info: HostInfo;
+}
+
+const { info } = Astro.props;
+---
+
+<h2>Info</h2>
+<ul>
+  {
+    Object.entries(info).map(([infoName, value]) => {
+      if (Array.isArray(value.value)) {
+        return (
+          <li>
+            {infoName} [
+            {value.value.map((v, i) => (
+              <>
+                {i > 0 && ", "}
+                <a href={v.value}>{v.name}</a>
+              </>
+            ))}
+            ]
+          </li>
+        );
+      } else {
+        if (value.link) {
+          return (
+            <li>
+              <a target="_blank" href={value.value}>
+                {infoName}
+              </a>
+            </li>
+          );
+        } else
+          return (
+            <li>
+              {infoName}: {value.value}
+            </li>
+          );
+      }
+    })
+  }
+</ul>

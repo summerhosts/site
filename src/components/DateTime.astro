@@ -1,0 +1,39 @@
+---
+interface Props {
+  timestamp: number | string;
+}
+
+const { timestamp: rawTimestamp } = Astro.props;
+const timestamp =
+  typeof rawTimestamp == "string" ? parseInt(rawTimestamp) : rawTimestamp;
+const time = new Date(timestamp).toLocaleString();
+---
+
+<div>
+  <span id="time">{time}</span>
+
+  <script define:vars={{ rawTimestamp, time }}>
+    const normalText = time;
+    const timestampText = rawTimestamp;
+    const parentElement = document.currentScript?.parentElement;
+
+    if (parentElement) {
+      parentElement.addEventListener("mouseenter", (e) => {
+        parentElement.childNodes[0].innerText = timestampText;
+        parentElement.childNodes[0].classList.add("short-code");
+      });
+
+      parentElement.addEventListener("mouseleave", (e) => {
+        parentElement.childNodes[0].innerText = normalText;
+        parentElement.childNodes[0].classList.remove("short-code");
+      });
+    }
+  </script>
+</div>
+
+<style>
+  div {
+    cursor: pointer;
+    display: inline-block;
+  }
+</style>

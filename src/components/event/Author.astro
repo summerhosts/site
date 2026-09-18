@@ -1,0 +1,15 @@
+---
+import type { EventAuthor } from "../../types/events";
+
+interface Props {
+  author: EventAuthor;
+}
+
+const { author } = Astro.props;
+---
+
+(<i
+  >{author.displayName}, {author.displayName}, <span class="short-code"
+    >{author.id}</span
+  ></i
+>)

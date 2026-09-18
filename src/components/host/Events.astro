@@ -1,0 +1,17 @@
+---
+import type { HostEvents } from "../../types/hosts";
+import Event from "./Event.astro";
+
+interface Props {
+  events: HostEvents;
+}
+
+const { events } = Astro.props;
+---
+
+<h2>Events</h2>
+{
+  Object.entries(events).map(([timestamp, event]) => (
+    <Event event={event} timestamp={timestamp} />
+  ))
+}

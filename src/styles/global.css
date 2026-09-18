@@ -14,3 +14,26 @@ a {
   outline-color: var(--tertiary-color);
   border-radius: 20px;
 }
+
+.short-code {
+  background-color: color-mix(in srgb, white 10%, var(--background-color));
+  font-family: monospace;
+  font-size: larger;
+
+  padding: 1px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+}
+
+.quote {
+  display: inline-block;
+
+  border-style: solid;
+  border-color: transparent;
+  border-left-color: var(--tertiary-color);
+  background-color: color-mix(in srgb, white 5%, var(--background-color));
+
+  padding: 0.2em;
+  padding-left: 1em;
+}
