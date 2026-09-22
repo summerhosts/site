@@ -1,14 +1,17 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import hosts from "../../data/hosts.json";
-import HostCard from "../../components/host/Card.astro";
+import HostCard from "../../components/host/HostCard.astro";
+import type { Host, Parent } from "../../types/hosts";
+import rHosts from "../../data/hosts.json";
+
+const hosts = rHosts as unknown as (Host | Parent)[];
 ---
 
 <BaseLayout title="Hosts list | Summerhosts">
   <div class="hosts-container">
     {
       hosts.map((h) => {
-        if (h.hosts)
+        if ("hosts" in h)
           return h.hosts.map((ch) => <HostCard parent={h} host={ch} />);
         else return <HostCard host={h} />;
       })

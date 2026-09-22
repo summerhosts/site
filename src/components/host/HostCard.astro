@@ -3,7 +3,7 @@ import type { Host, Parent } from "../../types/hosts";
 
 interface Props {
   host: Host;
-  parent: Parent;
+  parent?: Parent;
 }
 
 const { host, parent } = Astro.props;

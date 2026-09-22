@@ -1,6 +1,7 @@
 import type { Events } from "./events";
+import type { Link } from "./links";
 
-export type HostInfo = { [key: string]: { value: string; link?: boolean } };
+export type HostInfo = { [key: string]: Link };
 
 export interface Host {
   name: string;
@@ -13,6 +14,6 @@ export interface Host {
 export interface Parent {
   name: string;
   slug: string;
-  bannerUrl: string;
+  bannerUrl?: string;
   hosts: Host[];
 }

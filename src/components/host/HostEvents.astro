@@ -1,9 +1,9 @@
 ---
-import type { HostEvents } from "../../types/hosts";
-import Event from "./Event.astro";
+import type { Events } from "../../types/events";
+import Event from "./HostEvent.astro";
 
 interface Props {
-  events: HostEvents;
+  events: Events;
 }
 
 const { events } = Astro.props;
