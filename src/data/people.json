@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Valeria",
+    "slug": "ceoofyt",
+    "shortDescription": "One of matt's exes who does hosting and anarchy stuff.",
+    "attributes": [
+      "Ether's ex-girlfriend",
+      "Owner of d2s9.org"
+    ],
+    "socials": {
+      "discord": [
+        {
+          "id": 791894874223280148,
+          "usernames": [
+            "ceoofyt"
+          ],
+          "displayNames": [
+            "Ceo"
+          ]
+        }
+      ],
+      "github": "https://github.com/CEOofYT",
+      "youtube": "https://www.youtube.com/@CEOofYTT/featured",
+      "instagram": "https://www.instagram.com/ceoofyt1",
+      "tiktok": "https://www.tiktok.com/@ceoofyt1",
+      "x": "https://x.com/CEOofYTT",
+      "webpages": {
+        "Carrd.co page": {
+          "value": "https://ceoofyt.carrd.co/",
+          "link": true
+        },
+        "Personal site": {
+          "value": [
+            {
+              "name": "custom domain",
+              "value": "https://ceoofyt.me/"
+            },
+            {
+              "name": "neocities",
+              "value": "https://ceoofyt.neocities.org/"
+            },
+            {
+              "name": "archive from custom domain",
+              "value": "https://web.archive.org/web/20260602203702/https://ceoofyt.me/"
+            }
+          ]
+        },
+        "Straw.page site": {
+          "value": [
+            {
+              "name": "original",
+              "value": "https://ceoofyt.straw.page/"
+            },
+            {
+              "name": "archived",
+              "value": "https://web.archive.org/web/20260504193820/https://ceoofyt.straw.page/"
+            }
+          ],
+          "link": true
+        }
+      }
+    }
+  }
+]

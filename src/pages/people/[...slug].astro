@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import people from "../../data/people.json";
+import type { Person } from "../../types/people";
+import PersonSocials from "../../components/person/PersonSocials.astro";
+
+export function getStaticPaths() {
+  return people.map((p) => ({
+    params: { slug: p.slug },
+    props: { person: p },
+  }));
+}
+
+interface Props {
+  person: Person;
+}
+
+const { person } = Astro.props;
+
+const hasSocials = Boolean(Array.from(Object.keys(person.socials)).length);
+---
+
+<BaseLayout title={`${person.name} | Summerhosts`}>
+  <h1>{person.name}</h1>
+  {
+    person.attributes.length && (
+      <ul>
+        {person.attributes.map((a) => (
+          <li>{a}</li>
+        ))}
+      </ul>
+    )
+  }
+  {hasSocials && <PersonSocials person={person} />}
+</BaseLayout>
+
+<style>
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner {
+    max-height: 40vh;
+    max-width: 50vw;
+  }
+</style>

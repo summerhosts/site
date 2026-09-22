@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import people from "../../data/people.json";
+import PersonCard from "../../components/person/PersonCard.astro";
+console.log(people);
+---
+
+<BaseLayout title="People | Summerhosts">
+  <div class="people-container">
+    {people.map((p) => <PersonCard person={p} />)}
+  </div>
+</BaseLayout>
+
+<style>
+  .people-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    gap: 1em;
+  }
+</style>

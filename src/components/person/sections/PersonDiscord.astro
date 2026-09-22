@@ -1,0 +1,50 @@
+---
+import type { DiscordSocial } from "../../../types/people";
+
+interface Props {
+  discords: DiscordSocial[];
+}
+
+const { discords } = Astro.props;
+---
+
+<h3>Discord</h3>
+
+<div>
+  <div class="container">
+    {
+      discords.map((d) => (
+        <div class="outline">
+          <h2>
+            <span class="short-code">{d.id}</span>
+          </h2>
+          <span>usernames: {d.usernames.join(", ")}</span>
+          <span>display names: {d.displayNames.join(", ")}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  h2 {
+    margin: 0;
+    margin-bottom: 0.3em;
+    padding: 0;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    gap: 1em;
+  }
+
+  .container > * {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+</style>

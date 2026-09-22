@@ -1,0 +1,38 @@
+---
+import type { Webpages } from "../../../types/people";
+
+interface Props {
+  webpages: Webpages;
+}
+
+const { webpages } = Astro.props;
+---
+
+<h3>Webpages</h3>
+
+<ul>
+  {
+    Object.entries(webpages).map(([name, info]) => {
+      if (Array.isArray(info.value))
+        return (
+          <li>
+            {name} [
+            {info.value.map((v, i) => (
+              <>
+                {i > 0 && ", "}
+                <a href={v.value}>{v.name}</a>
+              </>
+            ))}
+            ]
+          </li>
+        );
+      else if (info.link)
+        return (
+          <li>
+            <a href={info.value}>{info.value}</a>
+          </li>
+        );
+      else return <li>{info.value}</li>;
+    })
+  }
+</ul>

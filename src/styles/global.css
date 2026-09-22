@@ -18,7 +18,8 @@ a {
 .short-code {
   background-color: color-mix(in srgb, white 10%, var(--background-color));
   font-family: monospace;
-  font-size: larger;
+
+  width: fit-content;
 
   padding: 1px;
   padding-left: 2px;

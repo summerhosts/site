@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "People",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "slug": {
+        "type": "string"
+      },
+      "shortDescription": {
+        "type": "string"
+      },
+      "attributes": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "socials": {
+        "type": "object",
+        "properties": {
+          "discord": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "usernames": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "displayNames": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "id",
+                "usernames",
+                "displayNames"
+              ]
+            }
+          },
+          "youtube": {
+            "type": "string"
+          },
+          "instagram": {
+            "type": "string"
+          },
+          "tiktok": {
+            "type": "string"
+          },
+          "github": {
+            "type": "string"
+          },
+          "x": {
+            "type": "string"
+          },
+          "webpages": {
+            "$ref": "linksList.schema.json"
+          }
+        }
+      },
+      "events": {
+        "$ref": "events.schema.json"
+      }
+    },
+    "required": [
+      "name",
+      "slug"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+---
+import type { Person } from "../../types/people";
+import PersonDiscord from "./sections/PersonDiscord.astro";
+import PersonWebpages from "./sections/PersonWebpages.astro";
+
+interface Props {
+  person: Person;
+}
+
+const { socials } = Astro.props.person;
+---
+
+<h2>Socials</h2>
+
+{socials.discord && <PersonDiscord discords={socials.discord} />}
+
+{socials.webpages && <PersonWebpages webpages={socials.webpages} />}

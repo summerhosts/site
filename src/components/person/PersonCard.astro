@@ -1,0 +1,38 @@
+---
+import type { Person } from "../../types/people";
+
+interface Props {
+  person: Person;
+}
+
+const { person } = Astro.props;
+---
+
+<a class="person outline" href={`/people/${person.slug}`}>
+  <h1>{person.name}</h1>
+  {person.shortDescription}
+</a>
+
+<style>
+  .person {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    align-items: center;
+
+    margin: 0;
+    padding: 1em;
+
+    transition: background-color, 100ms;
+  }
+
+  .person:hover {
+    background-color: var(--tertiary-color);
+  }
+
+  .person img {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+</style>

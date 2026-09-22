@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import Events from "../../components/host/Events.astro";
-import Info from "../../components/host/Info.astro";
+import Events from "../../components/host/HostEvents.astro";
+import HostInfo from "../../components/host/HostInfo.astro";
 import type { Host, Parent } from "../../types/hosts";
 import hosts from "../../data/hosts.json";
 
@@ -43,7 +43,7 @@ const fullName = parent ? [parent.name, name].join(" ") : host.name;
       <h1>{fullName}</h1>
     )
   }
-  <Info info={info} />
+  <HostInfo info={info} />
   {host.events && <Events events={host.events} />}
 </BaseLayout>
 

@@ -1,11 +1,18 @@
 {
   "editor.formatOnSave": true,
+  "emmet.showAbbreviationSuggestions": false,
   "json.schemas": [
     {
       "fileMatch": [
         "/src/data/hosts.json"
       ],
-      "url": "./src/data/hosts.schema.json"
+      "url": "./src/data/schemas/hosts.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/src/data/people.json"
+      ],
+      "url": "./src/data/schemas/people.schema.json"
     }
   ]
 }
