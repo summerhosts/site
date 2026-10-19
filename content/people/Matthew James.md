@@ -117,7 +117,7 @@ The section below is formatted like this:
 - `layerxbt`
 - `layer`
 
-## Websites
+## Other links
 
 :::info
 
@@ -133,6 +133,8 @@ The majority if not all pages in this section have been archived on [archive.org
 - [ghost.io site](https://ether-1.ghost.io/)
 - [hPanel](https://github.com/h-panel)
 - [Heliactyl Archive](https://github.com/Heliactyl-Archive)
+- [Steam profile](https://steamcommunity.com/profiles/76561198866779039)
+- [Spotify](https://open.spotify.com/user/31sbkqawzhhui2cnkkh6spfdfl4e)
 
 ## Music Albums
 
