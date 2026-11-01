@@ -1,0 +1,24 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import type { Host, Parent } from "../../types/hosts";
+import software from "../../data/software.json";
+import SoftwareCard from "../../components/software/SoftwareCard.astro";
+---
+
+<BaseLayout title="Hosts list | Summerhosts">
+  <div class="software-container">
+    {
+      software.map((s) => {
+        return <SoftwareCard software={s} />;
+      })
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .software-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    gap: 1em;
+  }
+</style>

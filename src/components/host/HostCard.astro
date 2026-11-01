@@ -13,11 +13,7 @@ const { host, parent } = Astro.props;
   class="host outline"
   href={`/hosts/${parent ? `${parent.slug}/` : ""}${host.slug}`}
 >
-  {
-    host.bannerUrl && (
-      <img src={host.bannerUrl ? host.bannerUrl : parent.bannerUrl} />
-    )
-  }
+  {host.bannerUrl && <img src={parent ? parent.bannerUrl : host.bannerUrl} />}
   <h1>{parent && `${parent.name} `}{host.name}</h1>
 </a>
 

@@ -1,0 +1,46 @@
+---
+import type { Software } from "../../types/software";
+
+interface Props {
+  software: Software;
+}
+
+const { software } = Astro.props;
+---
+
+<a class="software outline" href={`/software/${software.slug}`}>
+  {
+    software.bannerUrl ? (
+      <img src={software.bannerUrl} />
+    ) : (
+      <>
+        {software.iconUrl && <img src={software.iconUrl} />}
+        <h1>{software.name}</h1>
+      </>
+    )
+  }
+</a>
+
+<style>
+  .software {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    align-items: center;
+
+    margin: 0;
+    padding: 1em;
+
+    transition: background-color, 100ms;
+  }
+
+  .software:hover {
+    background-color: var(--tertiary-color);
+  }
+
+  .software img {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+</style>

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Alchemy",
+    "slug": "alchemy",
+    "description": "Alchemy is a replacement for Docker written in Rust thanks to an internal version of the Arc Magnus AI model. It has \"close to 1: 1 CLI and API compatibility\" to docker."
+  },
+  {
+    "name": "Tecton",
+    "slug": "tecton",
+    "description": "Captcha/antibot system",
+    "bannerUrl": "https://summerhosts.github.io/media/altare/tecton/tecton.png"
+  }
+]

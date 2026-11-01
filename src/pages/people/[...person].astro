@@ -6,7 +6,7 @@ import PersonSocials from "../../components/person/PersonSocials.astro";
 
 export function getStaticPaths() {
   return people.map((p) => ({
-    params: { slug: p.slug },
+    params: { person: p.slug },
     props: { person: p },
   }));
 }

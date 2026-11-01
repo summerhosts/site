@@ -13,6 +13,12 @@
         "/src/data/people.json"
       ],
       "url": "./src/data/schemas/people.schema.json"
-    }
+    },
+    {
+      "fileMatch": [
+        "/src/data/software.json"
+      ],
+      "url": "./src/data/schemas/software.schema.json"
+    },
   ]
 }

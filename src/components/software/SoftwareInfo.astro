@@ -1,0 +1,32 @@
+---
+import type { ReferenceList } from "../../types/references";
+
+interface Props {
+  description: string;
+  references: ReferenceList;
+}
+
+const { description, references } = Astro.props;
+let linkedDescription = description;
+
+const keys = Object.keys(references).sort((a, b) => b.length - a.length);
+const lookup = Object.fromEntries(
+  Object.entries(references).map(([k, v]) => [k.toLowerCase(), v]),
+);
+
+if (keys.length) {
+  // build one big regex that finds all the reference matches
+  const pattern = new RegExp(
+    `\\b(${keys.map(RegExp.escape).join("|")})\\b`,
+    "gi",
+  );
+
+  linkedDescription = description.replace(pattern, (match) => {
+    const reference = lookup[match.toLowerCase()];
+    return `<a href="${reference.pageURL}">${match}</a>`;
+  });
+}
+---
+
+<h2>Description</h2>
+<p><Fragment set:html={linkedDescription} /></p>
